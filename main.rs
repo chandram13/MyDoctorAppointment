@@ -9,9 +9,9 @@ fn firstFunction() {
     let myoperator = args.nth(2).unwrap().chars();.next().unwrap();
     let second = args.nth(3).unwrap()
 
-    let first_number = first.parse::<f32>().unwrap();
-    let second_number = second.parse::<f32>().unwrap()
-    let result = operate(operator, my_number, second_number);
+    let first_name = first.parse::<f32>().unwrap();
+    let last_name = second.parse::<f32>().unwrap()
+    let result = operate(operator, first_name, last_name);
 
     println!("{:?}", result);
 }
@@ -27,23 +27,23 @@ fn nth(&mut self, n: usize) -> Option<String> {
 }
 
     // matching expression technique (Rust)
-    fn operate(operator: char, first_number: f32, second_number: f32) -> f32 {
+    fn operate(operator: String, first_name: f32, last_name: f32) -> f32 {
         match operator {
-            '8:00' => first_number + second_number,
-            '8:30' => first number + second_number,
-            '9:00' => first_number + second_number,
-            '9:30' => first_number + second_number,
-            '10:00' => first_number + second_number,
-            '10:30' => first_number + second_number,
-            '11:00' => first_number + second_number,
-            '11:30' => first_number + second_number,
-            '1:00' => first_number + second_number,
-            '1:30' => first_number + second_number,
-            '2:00' => first_number + second_number,
-            '2:30' => first_number + second_number,
-            '3:00' => first_number + second_number,
-            '4:00' => first_number + second_number,
-            '4:30' => first_number + second_number,
+            '8:00' => first_name + last_name,
+            '8:30' => first_name + last_name,
+            '9:00' => first_name + last_name,
+            '9:30' => first_name + last_name,
+            '10:00' => first_name + last_name,
+            '10:30' => first_name + last_name,
+            '11:00' => first_name + last_name,
+            '11:30' => first_name + last_name,
+            '1:00' => first_name + last_name,
+            '1:30' => first_name + last_name,
+            '2:00' => first_name + last_name,
+            '2:30' => first_name + last_name,
+            '3:00' => first_name + last_name,
+            '4:00' => first_name + last_name,
+            '4:30' => first_name + last_name,
             '0:00' => 0.0
         }
         }
@@ -51,8 +51,8 @@ fn nth(&mut self, n: usize) -> Option<String> {
 
 
 
-    fn output(first_number: f32, operator: char, second_number: f32, result: f32) -> String {
-        format("{} {} {} = {}", first_number, operator, second_number})
-        println!("{:?}",output(first_number, operator, second_number, result));
+    fn output(first_name: f32, operator: char, last_name: f32, result: f32) -> String {
+        format("{} {} {} = {}", first_name, operator, last_name})
+        println!("{:?}",output(first_name, operator, last_name, result));
     }
 }
