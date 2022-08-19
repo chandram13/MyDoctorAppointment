@@ -130,6 +130,8 @@ fn nth(&mut self, n: usize) -> Option<String> {
 
     fn output(first_name: String, operator: char, last_name: String, result: f32) -> String {
         format("{} {} {} = {}", first_name, operator, last_name})
+        format("{} = {}",currentAppointment)
         println!("{:?}",output(first_name, operator, last_name, result));
+        println!("{:?}",output(currentAppointment));
     }
 }
